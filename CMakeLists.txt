@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 2.8)
+project(orange)
+find_package(OpenCV 4.7 REQUIRED)
+include_directories(${OpenCV_INCLUDE_DIRS})
+add_executable(orange orange.cpp)
+target_link_libraries(orange ${OpenCV_LIBS})
